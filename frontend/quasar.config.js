@@ -43,7 +43,7 @@ module.exports = configure(function (/* ctx */) {
     extras: [
       // 'ionicons-v4',
       // 'mdi-v5',
-      // 'fontawesome-v6',
+      'fontawesome-v6',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
@@ -88,7 +88,10 @@ module.exports = configure(function (/* ctx */) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
     devServer: {
       // https: true
-      open: true // opens browser window automatically
+      open: {
+        app: { name: 'chrome' }
+      },
+      //port:9001 // opens browser window automatically
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
